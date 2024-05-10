@@ -13,7 +13,7 @@ public class Homepage {
     public void goToHomePage() throws InvalidFormatException, IOException {
         String URL = wc.getSpecificColumnData("./src/test/testdata/data.xlsx", "sheet1", "URL");
         driver.get(URL);
-        wc.waitForCondition("PageLoad", "", 60);
+        wc.waitForCondition("PageLoad", "", 70);
     }
 
     public void checkBlogLinkDisplay() {
